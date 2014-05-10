@@ -1,0 +1,153 @@
+/*
+	@description	Style for Bootstrap MW skin
+	@author         South Paw (http://southpaw.co.nz/)
+*/
+
+header.header .navbar {
+	margin-top: 20px;
+}
+
+.navbar-wiki {
+	border-bottom: 1px solid #ddd;
+}
+
+	.navbar-wiki .nav {
+		margin-bottom: -1px;
+	}
+
+.navbar-wiki .nav-tabs>li.selected>a, 
+.navbar-wiki .nav-tabs>li.selected>a:hover, 
+.navbar-wiki .nav-tabs>li.selected>a:focus {
+	color: #555;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-bottom-color: transparent;
+	cursor: pointer;
+}
+
+.wiki .page .subtitle, 
+.wiki .page .jumplinks {
+	display: none;
+}
+
+.wiki .page .toc {
+	margin-bottom: 16px;
+	margin-left: 16px;
+	width: 30%;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	float: right;
+}
+
+	.wiki .page .toc #toctitle {
+		background-color: #f5f5f5;
+		border-bottom: 1px solid #ddd;
+		padding: 16px;
+	}
+	
+		.wiki .page .toc #toctitle .toctoggle {
+			color: #777;
+		}
+		
+			.wiki .page .toc #toctitle .toctoggle a {
+				color: #777;
+			}
+
+	.wiki .page .toc h2 {
+		margin-top: 0;
+	}
+
+	.wiki .page .toc ul{
+		list-style: none;
+	}
+	
+	.wiki .page .toc>ul {
+		padding: 16px;
+	}
+	
+.wiki .page .catlinks {
+	margin-top: 12px;
+	background-color: #f5f5f5;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 8px;
+}
+
+.wiki .page .patrollink {
+	margin-top: 8px;
+}
+
+.sidebar {
+	margin-top: 20px;
+}
+
+.sidebar .panel-body {
+	padding: 0;
+}
+
+.sidebar .nav-pills>li>a {
+	border-radius: 0;
+	font-size: 12px;
+}
+
+	.sidebar .nav-pills>li:last-child>a {
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}
+	
+.mw-specialpages-table {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+legend {
+	border-color: #eee;
+}
+
+a.feedlink {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAB5UlEQVR42k2SzU8TQQDF5+8w8S8QRWl2t90tFxOPxosxYuIBkBjiCROpWiV8tIKUtoomJhgIMcSEC4SIcNCDxnD14sHEbpCW7nbb0m7p9mu37TxnhkCc0xzee/m9N0N+DZ47nw77UuYzhZrPFViTfhQiARRnVRzNqyjHNdgJjRoROcW1hIn17FgvrLkbyE/2ozBxBaWZPthzPlQTEupvZDTfKXCXAjAjsk5YKj0cuwjadMBPO/cbja9xVF+r/4n9aK+oqLwKUpKb8CMX6oWzu4DWz010naIwUjuN1vrAmbjxVoG9EATJTwUERu3TFJy1IZaswf0eAzou4DrobN4V4uOYhCPWixSjqmCmrROkbmkf7sYwvK0RxtcErWRxnNRQmu5DYToAwlyiYO3DALy9RcCrs3QPne378L69FCH1L0lYTy7DYvikPK+JNRrvrzHmO/DWbzFTjXXIiOSubaBd+Avj4SWYYQXEjgfFGrSk86robA3C+5EQydW1UdT3Pop7NnwVRogbkhrl03X/7AA1C83V63CWb54YPsdR2ZgVdyN6G5lxiRJzRtLZo/DpTtfgBTmzwEg/6MH+vQvQh3pwEPLp4msYUSVVSQZpOaah+EJFnq3B38d4KuNwXEbmkUQPHvvE1/gHGQ6mWZBs5g0AAAAASUVORK5CYII=) 92% center no-repeat;
+	background: url(http://thedailyblock.co.nz/wiki/skins/common/images/feed-icon.png?2014-04-22T09:56:40Z) 92% center no-repeat!ie;
+}
+	
+footer.footer {
+	margin-top: 40px;
+	color: #777;
+	text-align: center;
+	border-top: 1px solid #e5e5e5;
+}
+
+	footer.footer .row {
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+
+	footer.footer ul.list {
+	margin-top: 20px;
+	padding-left: 0;
+	color: #999;
+	}
+
+		footer.footer ul.list li {
+		display: inline;
+		padding: 0 2px;
+		}
+
+			footer.footer ul.list li:first-child {
+				padding-left: 0;
+			}
+			
+	footer.footer ul.list .footer-copyright, 
+	footer.footer ul.list .footer-privacy, 
+	footer.footer ul.list .footer-about, 
+	footer.footer ul.list .footer-disclaimer {
+		display: none;
+	}
+	
+	footer.footer .footer-copyright {
+		text-align: right;
+	}
+	
+	footer.footer .footer-poweredby {
+		text-align: left;
+	}
