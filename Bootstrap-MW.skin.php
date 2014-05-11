@@ -33,12 +33,6 @@ class BootstrapMW extends BaseTemplate {
 			<div class="container">
 				<nav class="navbar navbar-default hidden-print" role="navigation">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
 						<?php
 						// Create a link and print the wiki header
 						echo '
@@ -47,13 +41,11 @@ class BootstrapMW extends BaseTemplate {
 						</a>';
 						?>
 					</div>
-					<div class="navbar-collapse collapse">
-						<div class="navbar-form navbar-right form-inline">
-							<?php
-								// Print the search box form
-								$this->searchBox();
-							?>
-						</div>
+					<div class="navbar-form navbar-right form-inline">
+						<?php
+							// Print the search box form
+							$this->searchBox();
+						?>
 					</div>
 				</nav>
 			</div>
@@ -69,7 +61,7 @@ class BootstrapMW extends BaseTemplate {
 				</nav>
 				<div class="container">
 					<div class="row">
-						<section class="col-md-10 page">
+						<section class="col-md-10 col-sm-12 page">
 							<?php if($this->data['sitenotice']) { ?>
 								<div id="alert alert-info"><?php $this->html('sitenotice') ?></div>
 							<?php } ?>
@@ -95,7 +87,7 @@ class BootstrapMW extends BaseTemplate {
 								<div class="clearfix"></div>
 							</div>
 						</section>
-						<aside class="col-md-2 sidebar hidden-print">
+						<aside class="col-md-2 hidden-sm hidden-xs sidebar hidden-print">
 							<?php
 								// Display Personal tools.
 								$this->personalTools();
@@ -123,7 +115,7 @@ class BootstrapMW extends BaseTemplate {
 				<?php
 						}
 				?>
-									<li><a href="https://github.com/South-Paw/Bootstrap-MW">Bootstrap MW Skin</a></a></li>
+									<li><a href="https://github.com/South-Paw/Bootstrap-MW">Bootstrap MW Skin</a> v1.0</li>
 								</ul>
 							</div>
 						</div>
@@ -151,7 +143,7 @@ class BootstrapMW extends BaseTemplate {
 		</div>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+		<script src="skins/Bootstrap-MW/js/bootstrap.min.js"></script>
 	<?php $this->printTrail(); ?>
 	</body>
 </html><?php

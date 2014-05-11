@@ -7,12 +7,38 @@ header.header .navbar {
 	margin-top: 20px;
 }
 
+header.header .navbar-form.navbar-right:last-child {
+	margin-right: 0;
+}
+
+@media (max-width: 767px) {
+	header.header .navbar-form {
+		margin-right: 0;
+		margin-left: 0;
+		border-top: none;
+		border-bottom: none;
+	}
+	
+	header.header .navbar-form input {
+		display: inline;
+	}
+}
+
 .navbar-wiki {
 	border-bottom: 1px solid #ddd;
 }
 
 	.navbar-wiki .nav {
 		margin-bottom: -1px;
+	}
+	
+	.navbar-wiki .nav.nav-tabs li {
+		float: right;
+	}
+	
+	.navbar-wiki .nav.nav-tabs li#ca-nstab-main, 
+	.navbar-wiki .nav.nav-tabs li#ca-talk {
+		float: left;
 	}
 
 .navbar-wiki .nav-tabs>li.selected>a, 
