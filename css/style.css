@@ -65,6 +65,72 @@ header.header .navbar {
 	.wiki .page .toc>ul {
 		padding: 16px;
 	}
+
+.wiki .page #mw-content-text #editform #toolbar {
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+.wiki .page #mw-content-text #editform textarea {
+	width: 100%;
+}
+
+.wiki .page #mw-history-compare {
+	font-size: 12px;
+}
+
+	.wiki .page #mw-history-compare .mw-history-histlinks {
+		margin-right: 4px
+	}
+
+.wiki .page .mw-label {
+	line-height: 25px;
+	width: 20%;
+}
+
+	.wiki .page .mw-label label {
+		margin-right: 4px;
+		margin-bottom: 0;
+	}
+
+.wiki .page .mw-input {
+	padding: 0;
+	line-height: 25px;
+}
+
+.wiki .page .mw-htmlform-field-HTMLTextField .mw-label, 
+.wiki .page .mw-htmlform-field-HTMLFloatField .mw-label {
+	line-height: 31px;
+}
+
+.wiki .page #mw-upload-form fieldset {
+	margin-bottom: 8px;
+}
+
+.wiki .page #preftoc {
+	margin-bottom: 30px;
+	padding-left: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+	.wiki .page #preftoc li {
+		display: block;
+		float: left;
+		position: relative;
+	}
+	
+		.wiki .page #preftoc li a {
+			padding: 10px 15px;
+			border-radius: 4px;
+			display: block;
+			position: relative;
+		}
+	
+		.wiki .page #preftoc li.selected a {
+			color: #fff;
+			background-color: #428bca;
+		}
 	
 .wiki .page .catlinks {
 	margin-top: 12px;
