@@ -11,7 +11,11 @@ class SkinBootstrapMW extends SkinTemplate {
 	    $template = 'BootstrapMW', $useHeadElement = true;
 	function setupSkinUserCss( OutputPage $out ){
 		parent::setupSkinUserCss( $out );
-		$out->addModuleStyles( "skins.bootstrapmw" );
+		
+		$out->addHeadItem( 'ie-meta', '<meta http-equiv="X-UA-Compatible" content="IE=edge" />' );
+		$out->addHeadItem( 'viewport-meta', '<meta name="viewport" content="width=device-width, initial-scale=1" />' );
+		
+		$out->addModuleStyles( 'skins.bootstrapmw' );
 	}
 }
 
@@ -100,8 +104,8 @@ class BootstrapMW extends BaseTemplate {
 				<footer class="footer">
 					<div class="container">
 				<?php
-					$validFooterIcons = $this->getFooterIcons( "icononly" );
-					$validFooterLinks = $this->getFooterLinks( "flat" ); // Additional footer links
+					$validFooterIcons = $this->getFooterIcons( 'icononly' );
+					$validFooterLinks = $this->getFooterLinks( 'flat' ); // Additional footer links
 					
 					if ( count( $validFooterLinks ) > 0 ) {
 				?>
@@ -182,25 +186,14 @@ class BootstrapMW extends BaseTemplate {
 		<form action="<?php $this->text('wgScript') ?>" class="searchform">
 			<div class="form-group">
 				<?php
-				echo $this->makeSearchInput(array( "id" => "searchInput", "class" => "form-control" ));
+				echo $this->makeSearchInput(array( 'id' => 'searchInput', 'class' => 'form-control' ));
 				?>
 			</div>
 			<div class="form-group">
 				<?php
-				echo $this->makeSearchButton("go", array( "class" => "btn btn-primary" ));
+				echo $this->makeSearchButton('go', array( 'class' => 'btn btn-primary' ));
 				?>
 			</div>
-			<?php
-				/*if ($wgUseTwoButtonsSearchForm) {
-					echo '<div class="form-group">';
-					echo $this->makeSearchButton("fulltext", array( "class" => "btn btn-primary" ));
-					echo '</div>';
-				} else {
-					echo '<div class="form-group">';
-					echo '<a href="'. $this->text('searchaction') .'" rel="search" class="btn btn-primary">'. $this->msg('powersearch-legend') .'</a>';
-					echo '</div>';
-				};*/
-			?>
 		</form>
 	<?php
 	}
