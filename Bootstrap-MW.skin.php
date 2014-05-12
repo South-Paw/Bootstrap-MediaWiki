@@ -108,19 +108,18 @@ class BootstrapMW extends BaseTemplate {
 							</div>
 						</div>
 					<?php }; ?>
-						<div class="row"><?php
-					foreach ( $validFooterIcons as $blockName => $footerIcons ) { ?>
-							<div class="col-md-6 icons footer-<?php echo htmlspecialchars($blockName); ?>"><?php
-								foreach ( $footerIcons as $icon ) {
-									echo $this->getSkin()->makeFooterIcon( $icon );
-								}; ?>
-							</div>
-					<?php }; ?>
-						</div>
+					<div class="row"><?php
+						foreach ( $validFooterIcons as $blockName => $footerIcons ) { ?>
+								<div class="col-md-6 icons footer-<?php echo htmlspecialchars($blockName); ?>"><?php
+									foreach ( $footerIcons as $icon ) {
+										echo $this->getSkin()->makeFooterIcon( $icon );
+									}; ?>
+								</div>
+						<?php }; ?>
 					</div>
-				</footer>
-			</main>
-		</div>
+				</div>
+			</footer>
+		</main>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="skins/Bootstrap-MW/js/bootstrap.min.js"></script>
