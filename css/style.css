@@ -3,6 +3,10 @@
 	@author         South Paw (http://southpaw.co.nz/)
 */
 
+a.new:hover {
+	color: #8F0000;
+}
+
 header.header .navbar {
 	margin-top: 20px;
 }
